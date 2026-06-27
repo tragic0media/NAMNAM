@@ -33,19 +33,19 @@ img {
 
 /* ===== MARQUESINA ===== */
 .marquesina {
-    background-color: var(--verde-oliva);
-    color: var(--negro);
+    background-color: var(--negro);
+    color: var(--blanco);
     overflow: hidden;
     white-space: nowrap;
-    padding: 8px 0;
-    font-size: 14px;
+    padding: 12px 0;
+    font-size: 20px;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .marquesina-contenido {
     display: inline-block;
-    animation: marquesina-scroll 15s linear infinite;
+    animation: marquesina-scroll 30s linear infinite;
 }
 
 .marquesina-contenido span {
@@ -64,17 +64,18 @@ img {
 /* ===== NAVBAR ===== */
 .navbar {
     background-color: var(--blanco);
+    border-bottom: 3px solid var(--negro);
 }
 
 .navbar a {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .btn-preventa {
     border: 2px solid var(--negro);
     border-radius: 50px;
-    padding: 6px 20px !important;
-    font-size: 14px !important;
+    padding: 8px 28px !important;
+    font-size: 18px !important;
     font-weight: bold;
     transition: background-color 0.3s;
 }
@@ -155,4 +156,373 @@ img {
     background-color: var(--gris);
     width: 100%;
     height: 200px;
+}
+
+/* ===== HERO ===== */
+#hero {
+    padding: 0 40px 60px;
+}
+
+#hero .col-md-8 {
+    align-self: flex-start;
+    padding-top: 0;
+    min-height: 560px;
+    justify-content: space-between;
+}
+
+.hero-logo-wrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+}
+
+.hero-logo {
+    height: 560px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+.hero-personaje {
+    width: 260px;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+.hero-titulo {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 80px;
+    font-style: italic;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+
+.hero-texto {
+    font-size: 26px;
+    line-height: 1.6;
+    margin-bottom: 36px;
+    max-width: 50vw;
+}
+
+.btn-preventa-hero {
+    display: inline-block;
+    background-color: var(--verde-oliva);
+    color: var(--blanco);
+    padding: 12px 40px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-preventa-hero:hover {
+    background-color: #6e7f16;
+    color: var(--blanco);
+}
+
+.hero-redes {
+    display: flex;
+    gap: 15px;
+}
+
+.red-social {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background-color: var(--gris);
+    border-radius: 50%;
+}
+
+.red-social:hover {
+    background-color: #b0b0b0;
+}
+
+@media (max-width: 767px) {
+    .hero-logo {
+        height: 250px;
+    }
+    .hero-personaje {
+        width: 120px;
+    }
+    #hero .col-md-7 {
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+}
+
+/* ===== GALERIA HERO ===== */
+#galeria-hero {
+    padding: 0 0 60px 0;
+}
+
+.galeria-img-grande {
+    height: 350px;
+    border-radius: 10px;
+}
+
+.galeria-img-pequena {
+    height: 350px;
+    border-radius: 10px;
+}
+
+@media (max-width: 767px) {
+    .galeria-img-grande,
+    .galeria-img-pequena {
+        height: 200px;
+    }
+}
+
+/* ===== MARQUESINA BLANCA ===== */
+.marquesina-blanca {
+    background-color: var(--blanco);
+    color: var(--negro);
+    border-top: 3px solid var(--negro);
+    border-bottom: 3px solid var(--negro);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px 0;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-top: 60px;
+}
+
+/* ===== CARACTERISTICAS ===== */
+#caracteristicas {
+    padding: 0 0 80px;
+}
+
+.caracteristicas-intro {
+    margin-bottom: 60px;
+}
+
+.caracteristicas-titulo {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 58px;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.caracteristicas-subtitulo {
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.caracteristica-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.caracteristica-img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.caracteristica-titulo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.caracteristica-texto {
+    font-size: 19px;
+    line-height: 1.6;
+    max-width: 260px;
+}
+
+/* ===== PREVENTA + CROWDFUNDING ===== */
+#crowdfunding {
+    padding: 0;
+}
+
+.preventa-box-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px 70px;
+}
+
+.preventa-box {
+    border: 3px dashed var(--rosa);
+    border-radius: 24px;
+    padding: 44px 64px;
+    max-width: 580px;
+    width: 100%;
+}
+
+.preventa-tag {
+    display: inline-block;
+    background-color: var(--rosa);
+    padding: 6px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.preventa-pregunta {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.btn-preventa-pink {
+    display: inline-block;
+    background-color: var(--rosa);
+    color: var(--negro);
+    padding: 10px 38px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn-preventa-pink:hover {
+    background-color: #f0a8c8;
+    color: var(--negro);
+}
+
+.crowdfunding-content {
+    background-color: var(--amarillo);
+    padding: 60px 0 60px;
+}
+
+.crowdfunding-img-placeholder {
+    width: 100%;
+    height: 100%;
+    min-height: 200px;
+    border-radius: 32px;
+}
+
+.crowdfunding-titulo {
+    font-size: 52px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+}
+
+.crowdfunding-subtitulo {
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.tiers-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.tier-card {
+    flex: 1;
+    border: 2px solid var(--negro);
+    border-radius: 16px;
+    padding: 20px 16px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tier-badge {
+    display: inline-block;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border-radius: 50px;
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.tier-card-nombre {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+}
+
+.tier-card-precio {
+    font-size: 28px;
+    font-weight: 900;
+    margin: 0;
+    line-height: 1;
+}
+
+.tier-card-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.tier-card-features li {
+    font-size: 13px;
+    line-height: 1.4;
+    padding-left: 16px;
+    position: relative;
+}
+
+.tier-card-features li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+.tier-card-btn {
+    display: block;
+    text-align: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+    padding: 9px 0;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.tier-card-btn:hover {
+    background-color: #333;
+    color: var(--blanco);
+}
+
+@media (max-width: 767px) {
+    .preventa-box {
+        padding: 30px 24px;
+    }
+    .preventa-pregunta {
+        font-size: 26px;
+    }
+    .crowdfunding-img-placeholder {
+        height: 260px !important;
+    }
+    .crowdfunding-titulo {
+        font-size: 36px;
+    }
+    .tiers-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .tier-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    .tier-card-features {
+        width: 100%;
+    }
 }

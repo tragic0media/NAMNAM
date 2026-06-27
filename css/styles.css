@@ -161,6 +161,7 @@ img {
 /* ===== HERO ===== */
 #hero {
     padding: 0 40px 60px;
+    margin-top: 60px;
 }
 
 #hero .col-md-8 {
@@ -390,6 +391,7 @@ img {
 .crowdfunding-content {
     background-color: var(--amarillo);
     padding: 60px 0 60px;
+    margin-bottom: 80px;
 }
 
 .crowdfunding-img-placeholder {
@@ -524,5 +526,136 @@ img {
     }
     .tier-card-features {
         width: 100%;
+    }
+}
+
+/* ===== MERCHANDISING ===== */
+#merchandising {
+    padding: 0 0 80px;
+    background-color: var(--blanco);
+}
+
+.merch-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+}
+
+.merch-titulo {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.btn-ir-tienda {
+    border: 2px solid var(--negro);
+    border-radius: 50px;
+    padding: 8px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.btn-ir-tienda:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+/* Masonry con columnas flex */
+.merch-masonry {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.merch-col {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Tarjeta */
+.merch-card {
+    border: 2px solid var(--negro);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.merch-img {
+    height: 160px;
+    border-radius: 0;
+}
+
+.merch-img--tall {
+    height: 280px;
+}
+
+.merch-card-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+}
+
+.merch-dots {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.merch-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--gris);
+}
+
+.merch-dot--on {
+    background-color: var(--negro);
+}
+
+.merch-precio {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.merch-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-top: 1px solid var(--negro);
+}
+
+.merch-nombre {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.merch-ir {
+    border: 1px solid var(--negro);
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.merch-ir:hover {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+@media (max-width: 767px) {
+    .merch-masonry {
+        flex-wrap: wrap;
+    }
+    .merch-col {
+        flex: 0 0 calc(50% - 8px);
+    }
+    .merch-titulo {
+        font-size: 28px;
     }
 }

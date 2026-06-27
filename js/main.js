@@ -1,5 +1,7 @@
 // ÑAMÑAM - JavaScript principal
 
+
+
 // Menu movil
 var btnAbrir = document.getElementById("btnAbrirMenu");
 var btnCerrar = document.getElementById("btnCerrarMenu");

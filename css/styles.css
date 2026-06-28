@@ -942,6 +942,8 @@ img {
     border-top: 3px solid var(--negro);
     margin-top: 48px;
     margin-bottom: 24px;
+    margin-left: -3rem;
+    margin-right: -3rem;
 }
 
 .footer-bottom {

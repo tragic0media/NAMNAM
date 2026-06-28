@@ -16,7 +16,7 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: var(--negro);
     background-color: var(--blanco);
 }
@@ -190,7 +190,7 @@ img {
 }
 
 .hero-titulo {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 80px;
     font-style: italic;
     margin-bottom: 24px;
@@ -299,7 +299,7 @@ img {
 }
 
 .caracteristicas-titulo {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 58px;
     font-style: italic;
     margin-bottom: 16px;
@@ -386,7 +386,7 @@ img {
 }
 
 .preventa-pregunta {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 38px;
     font-style: italic;
     font-weight: bold;
@@ -494,7 +494,7 @@ img {
 }
 
 .tier-card-nombre {
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-style: italic;
     font-weight: bold;

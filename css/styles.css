@@ -343,6 +343,8 @@ img {
 .preventa-box-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 15px;
     padding: 0 20px 70px;
 }
 
@@ -352,6 +354,22 @@ img {
     padding: 44px 64px;
     max-width: 580px;
     width: 100%;
+}
+
+.preventa-arrow {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preventa-arrow img {
+    width: 280px;
+    height: auto;
+}
+
+.preventa-arrow-right img {
+    transform: scaleX(-1);
 }
 
 .preventa-tag {
